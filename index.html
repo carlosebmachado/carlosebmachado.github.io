@@ -1,0 +1,116 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Hello. I'm Carlos. I am currently studying Computer Science. I am always looking for new knowledge and I am very curious to know how things are built.">
+  <meta name="keywords" content="developer, back-end, portfolio, CV">
+  <meta name="author" content="Carlos Machado">
+
+  <link href="img/favicon/favicon.ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="parent">
+
+    <div class="sidebar">
+
+      <div class="sidebar-pos">
+
+        <div class="img-sidebar">
+          <img src="img/avatar/avatar.png" />
+        </div>
+
+        <div class="menu">
+          <a href="#about" id="selected">About</a>
+          <a href="#resume">Resume</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="wrapper">
+
+      <div id="about" class="content">
+
+        <section class="descricao">
+  
+          <h2>Carlos <span>Machado</span></h2>
+          <p>Hello. I am a passionate programmer currently studying Computer Science. I am always looking for new
+            knowledge and I am very curious to know how things are built.</p>
+          <p>I love programming! I have already developed several personal projects like programs, web and app apps, and
+            even small games. See my <a href="#portfolio">portfolio</a>.</p>
+  
+          <div class="icons-social">
+            <a href="https://linkedin.com/in/carlosebmachado/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/carlosebmachado" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://keybase.io/carlosebmachado" target="_blank"><i class="fab fa-keybase"></i></a>
+            <a href="mailto:carlosebmachado@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          </div>
+  
+        </section>
+  
+      </div>
+
+      <div id="resume" class="content">
+
+        <section class="descricao">
+  
+          <h2>Resume</h2>
+          <p>This is my CV.</p>
+
+        </section>
+  
+      </div>
+
+      <div id="portfolio" class="content">
+
+        <section class="descricao">
+  
+          <h2>Portfolio</h2>
+          <p>This is my portfolio.</p>
+
+        </section>
+  
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    var $doc = $('html, body');
+    $('a').click(function () {
+      $doc.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+
+      var $menu = $('.menu');
+      for (let i = 0; i < $menu.children().length; i++) {
+        $menu.children()[i].removeAttribute('id');
+      }
+
+      if($menu.has(this).length){
+        this.setAttribute('id', 'selected');
+      }
+
+      return false;
+    });
+
+  </script>
+
+</body>
+
+</html>
