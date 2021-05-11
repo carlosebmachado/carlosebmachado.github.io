@@ -39,6 +39,8 @@
           <a href="#portfolio">Portfolio</a>
         </div>
 
+        <small>&copy; Carlos Machado. All rights reserved.</small>
+
       </div>
 
     </div>
@@ -49,10 +51,10 @@
 
         <section class="descricao">
   
-          <h2>Carlos <span>Machado</span></h2>
+          <h2>Carlos Machado<span>.</span></h2>
           <p>Hello. I am a passionate programmer currently studying Computer Science. I am always looking for new
             knowledge and I am very curious to know how things are built.</p>
-          <p>I love programming! I have already developed several personal projects like programs, web and app apps, and
+          <p>I love programming! I have already developed several personal projects like programs, websites and apps, mobile apps, and
             even small games. See my <a href="#portfolio">portfolio</a>.</p>
   
           <div class="icons-social">
@@ -95,22 +97,36 @@
   <script src="js/jquery.min.js"></script>
   <script>
     var $doc = $('html, body');
-    $('a').click(function () {
+    $('.menu a').click(function () {
       $doc.animate({
         scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
 
+      setCurrentMenu(this);
+
+      return false;
+    });
+
+    $('p a').click(function () {
+      $doc.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+
+      setCurrentMenu($('.menu').children()[2]);
+
+      return false;
+    });
+
+    function setCurrentMenu($option){
       var $menu = $('.menu');
       for (let i = 0; i < $menu.children().length; i++) {
         $menu.children()[i].removeAttribute('id');
       }
 
-      if($menu.has(this).length){
-        this.setAttribute('id', 'selected');
+      if($menu.has($option).length){
+        $option.setAttribute('id', 'selected');
       }
-
-      return false;
-    });
+    }
 
   </script>
 

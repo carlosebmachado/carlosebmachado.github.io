@@ -5,6 +5,14 @@
     font-family: 'Saira Extra Condensed', sans-serif;
 }
 
+:root {
+    --primary-color: #7F7EFF;
+    --primary-dark-color: #7777e2;
+    --accent-color: #F03A47;
+    --backgroung-color: #F8F7FF;
+    --text-color: #2E2E3A;
+}
+
 html, body {
     height: 100%;
 }
@@ -17,7 +25,7 @@ html, body {
     width: 15%;
     height: 100%;
     position: fixed;
-    background-color: #512679;
+    background-color: var(--primary-color);
 }
 
 .sidebar-pos {
@@ -26,13 +34,20 @@ html, body {
     transform: translateY(-50%);
 }
 
+.sidebar-pos small {
+    color: var(--backgroung-color);
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+}
+
 .img-sidebar {
     text-align: center;
 }
 
 .img-sidebar img {
-    width: 80%;
-    border: 8px solid #62318e;
+    width: 66%;
+    border: 8px solid var(--primary-dark-color);;
     border-radius: 50%;
 }
 
@@ -75,24 +90,33 @@ section.descricao {
 }
 
 section.descricao h2 {
-    color: #343a40;
+    color: var(--text-color);
     font-size: 46px;
     margin-bottom: 30px;
 }
 
 section.descricao h2>span {
-    color: #62318e;
+    color: var(--accent-color);
 }
 
 section.descricao h3 {
     margin: 15px 0;
-    color: #6c757d;
+    color: var(--text-color);
     font-size: 26px;
 }
 
 section.descricao p {
-    color: #6c757d;
+    color: var(--text-color);
     font-size: 20px;
+}
+
+section.descricao p a {
+    color: var(--accent-color);
+}
+
+section.descricao p a:visited {
+    color: var(--accent-color);
+    text-decoration: none;
 }
 
 .icons-social {
@@ -102,7 +126,7 @@ section.descricao p {
 .icons-social a {
     text-decoration: none;
     color: white;
-    background-color: gray;
+    background-color: var(--accent-color);
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -135,11 +159,10 @@ div:hover::-webkit-scrollbar-corner {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #62318e;
+    background: var(--accent-color);
     border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #512679;
     border-radius: 5px;
 }
