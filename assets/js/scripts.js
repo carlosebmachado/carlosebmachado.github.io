@@ -1,3 +1,20 @@
+$('#btn-theme').on('click', function () {
+    var lbl = $('#btn-theme-label');
+    if (lbl.text() == 'Light') {
+        lbl.text('Dark');
+    } else {
+        lbl.text('Light');
+    }
+    $('head link').each(function () {
+        var url = $(this).attr('href');
+        if (url == 'assets/css/light-theme.css') {
+            $(this).attr('href', 'assets/css/dark-theme.css');
+        } else if (url == 'assets/css/dark-theme.css') {
+            $(this).attr('href', 'assets/css/light-theme.css');
+        }
+    });
+});
+
 /*!
 * Start Bootstrap - Resume v6.0.3 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2021 Start Bootstrap
