@@ -1,17 +1,21 @@
 $(document).ready(function () {
     var theme = getCookie('theme');
-    if (theme == 'light') {
-        $('#btn-theme').click();
+    if (theme != '') {
+        if (theme == 'dark') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    } else {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
     }
 });
 
 $('#btn-theme').on('click', function () {
-    var lbl = $('#btn-theme-label');
-    if (lbl.text() == 'Light') {
-        lbl.text('Dark');
-    } else {
-        lbl.text('Light');
-    }
     var link = $('#theme-link');
     var url = String(link.attr('href'));
     var start = '../';
@@ -19,13 +23,24 @@ $('#btn-theme').on('click', function () {
         start = '';
     }
     if (url == start + 'assets/css/light-theme.css') {
-        link.attr('href', start + 'assets/css/dark-theme.css');
-        setCookie('theme', 'dark', 10 * 365);
+        setTheme('dark');
     } else if (url == start + 'assets/css/dark-theme.css') {
-        link.attr('href', start + 'assets/css/light-theme.css');
-        setCookie('theme', 'light', 10 * 365);
+        setTheme('light');
     }
 });
+
+function setTheme(theme){
+    var lbl = $('#btn-theme-label');
+    lbl.text(theme);
+    var link = $('#theme-link');
+    var url = String(link.attr('href'));
+    var start = '../';
+    if (!url.startsWith(start)) {
+        start = '';
+    }
+    link.attr('href', start + 'assets/css/' + theme + '-theme.css');
+    setCookie('theme', theme, 10 * 365);
+}
 
 // Cookies
 function setCookie(name, value, days) {
