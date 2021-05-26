@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    var theme = readCookie('theme');
+    if (theme == 'light') {
+        $('#btn-theme').click();
+    }
+});
+
 $('#btn-theme').on('click', function () {
     var lbl = $('#btn-theme-label');
     if (lbl.text() == 'Light') {
@@ -9,11 +16,40 @@ $('#btn-theme').on('click', function () {
         var url = $(this).attr('href');
         if (url == 'assets/css/light-theme.css') {
             $(this).attr('href', 'assets/css/dark-theme.css');
+            createCookie('theme', 'dark', 10 * 365);
         } else if (url == 'assets/css/dark-theme.css') {
             $(this).attr('href', 'assets/css/light-theme.css');
+            createCookie('theme', 'light', 10 * 365);
         }
     });
 });
+
+// Cookies
+function createCookie(name, value, days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+    }
+    else var expires = "";               
+
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name, "", -1);
+}
 
 /*!
 * Start Bootstrap - Resume v6.0.3 (https://startbootstrap.com/theme/resume)
