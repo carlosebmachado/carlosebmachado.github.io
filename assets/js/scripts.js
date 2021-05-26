@@ -14,11 +14,11 @@ $('#btn-theme').on('click', function () {
     }
     $('head link').each(function () {
         var url = $(this).attr('href');
-        if (url == 'assets/css/light-theme.css') {
-            $(this).attr('href', 'assets/css/dark-theme.css');
+        if (url == '../assets/css/light-theme.css') {
+            $(this).attr('href', '../assets/css/dark-theme.css');
             createCookie('theme', 'dark', 10 * 365);
-        } else if (url == 'assets/css/dark-theme.css') {
-            $(this).attr('href', 'assets/css/light-theme.css');
+        } else if (url == '../assets/css/dark-theme.css') {
+            $(this).attr('href', '../assets/css/light-theme.css');
             createCookie('theme', 'light', 10 * 365);
         }
     });
