@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var theme = readCookie('theme');
+    var theme = getCookie('theme');
     if (theme == 'light') {
         $('#btn-theme').click();
     }
@@ -20,27 +20,27 @@ $('#btn-theme').on('click', function () {
     }
     if (url == start + 'assets/css/light-theme.css') {
         link.attr('href', start + 'assets/css/dark-theme.css');
-        createCookie('theme', 'dark', 10 * 365);
+        setCookie('theme', 'dark', 10 * 365);
     } else if (url == start + 'assets/css/dark-theme.css') {
         link.attr('href', start + 'assets/css/light-theme.css');
-        createCookie('theme', 'light', 10 * 365);
+        setCookie('theme', 'light', 10 * 365);
     }
 });
 
 // Cookies
-function createCookie(name, value, days) {
+function setCookie(name, value, days) {
     if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        var expires = "; expires=" + date.toGMTString();
+        var expires = '; expires=' + date.toGMTString();
     }
-    else var expires = "";               
+    else var expires = '';               
 
-    document.cookie = name + "=" + value + expires + "; path=/";
+    document.cookie = name + '=' + value + expires + '; path=/';
 }
 
-function readCookie(name) {
-    var nameEQ = name + "=";
+function getCookie(name) {
+    var nameEQ = name + '=';
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
@@ -50,8 +50,8 @@ function readCookie(name) {
     return null;
 }
 
-function eraseCookie(name) {
-    createCookie(name, "", -1);
+function removeCookie(name) {
+    setCookie(name, '', -1);
 }
 
 /*!
