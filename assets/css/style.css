@@ -2,23 +2,21 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.btn-theme-wrapper {
+.fixed-btns {
     position: fixed;
     top: 2%;
     right: 1%;
 }
 
 @media (max-width: 991px) {
-    .btn-theme-wrapper {
+    .fixed-btns {
         top: 8%;
     }
 }
 
 .btn-language {
+    display: inline-block;
     border: none;
-    position: fixed;
-    top: 7%;
-    right: 1%;
     padding: 5px 10px;
     width: 70px;
     text-align: center;
@@ -29,6 +27,12 @@ body {
 
     -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
     box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+}
+
+.btn-language:hover {
+    color: var(--white-color);
+    background-color: var(--primary-dark-color);
+    text-decoration: none;
 }
 
 .btn-theme:not(:checked), 
@@ -50,6 +54,10 @@ body {
 
     -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
     box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+}
+
+.btn-theme + label:hover {
+    background-color: var(--primary-dark-color);
 }
 
 /* .btn-theme:checked + label {

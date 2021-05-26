@@ -12,16 +12,19 @@ $('#btn-theme').on('click', function () {
     } else {
         lbl.text('Light');
     }
-    $('head link').each(function () {
-        var url = $(this).attr('href');
-        if (url == '../assets/css/light-theme.css') {
-            $(this).attr('href', '../assets/css/dark-theme.css');
-            createCookie('theme', 'dark', 10 * 365);
-        } else if (url == '../assets/css/dark-theme.css') {
-            $(this).attr('href', '../assets/css/light-theme.css');
-            createCookie('theme', 'light', 10 * 365);
-        }
-    });
+    var link = $('#theme-link');
+    var url = String(link.attr('href'));
+    var start = '../';
+    if (!url.startsWith(start)) {
+        start = '';
+    }
+    if (url == start + 'assets/css/light-theme.css') {
+        link.attr('href', start + 'assets/css/dark-theme.css');
+        createCookie('theme', 'dark', 10 * 365);
+    } else if (url == start + 'assets/css/dark-theme.css') {
+        link.attr('href', start + 'assets/css/light-theme.css');
+        createCookie('theme', 'light', 10 * 365);
+    }
 });
 
 // Cookies
