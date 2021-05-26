@@ -1,0 +1,75 @@
+body {
+    background-color: var(--primary-bg-color);
+}
+
+.btn-theme-wrapper {
+    position: fixed;
+    top: 2%;
+    right: 1%;
+}
+
+@media (max-width: 991px) {
+    .btn-theme-wrapper {
+        top: 8%;
+    }
+}
+
+.btn-language {
+    border: none;
+    position: fixed;
+    top: 7%;
+    right: 1%;
+    padding: 5px 10px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius:20px;
+
+    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+}
+
+.btn-theme:not(:checked), 
+.btn-theme:checked {
+    position: absolute;
+    left: -9999%;
+}
+
+.btn-theme + label {
+    display: inline-block;
+    padding: 5px 10px;
+    width: 70px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    margin-bottom: 5px;
+    border-radius:20px;
+
+    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
+    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+}
+
+/* .btn-theme:checked + label {
+    color: white;
+    color: var(--primary-bg-color);
+} */
+
+.skill-wrap {
+    display: inline-block;
+    width: 66px;
+}
+
+.skill-level-box {
+    display: inline-block;
+    width: 29%;
+    height: 6px;
+    margin-left: 4%;
+    background-color: var(--special-disable-color);
+}
+
+.skill-active {
+    background-color: var(--special-text-color) !important;
+}
