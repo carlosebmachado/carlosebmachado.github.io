@@ -30,8 +30,13 @@ $('#btn-theme').on('click', function () {
 });
 
 function setTheme(theme){
+    if (theme != 'dark' || theme != 'light') return;
     var lbl = $('#btn-theme-label');
-    lbl.text(theme);
+    if (theme == 'dark') {
+        lbl.text('Light');
+    } else {
+        lbl.text('Dark');
+    }
     var link = $('#theme-link');
     var url = String(link.attr('href'));
     var start = '../';
