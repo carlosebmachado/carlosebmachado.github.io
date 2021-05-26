@@ -30,7 +30,7 @@ $('#btn-theme').on('click', function () {
 });
 
 function setTheme(theme){
-    if (theme != 'dark' || theme != 'light') return;
+    if (theme != 'dark' && theme != 'light') return;
     var lbl = $('#btn-theme-label');
     if (theme == 'dark') {
         lbl.text('Light');
