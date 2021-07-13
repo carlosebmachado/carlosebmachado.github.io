@@ -3,6 +3,7 @@ body {
 }
 
 .fixed-btns {
+    z-index: 999;
     position: fixed;
     top: 2%;
     right: 1%;
