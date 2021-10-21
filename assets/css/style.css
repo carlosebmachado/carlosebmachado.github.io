@@ -82,3 +82,8 @@ body {
 .skill-active {
     background-color: var(--special-text-color) !important;
 }
+
+.skill-svg {
+    width: 0.875em;
+    margin-bottom: 10px;
+}
