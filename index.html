@@ -31,7 +31,7 @@
   <div class="fixed-btns">
     <input class="btn-theme" type="checkbox" id="btn-theme" name="btn-theme" value="btn-theme" checked>
     <label id="btn-theme-label" for="btn-theme">Dark</label>
-    <!-- <a class="btn-language" href="en-us/">EN-US</a> -->
+    <a class="btn-language" href="#" onclick="mlang.setLang('en')">{english}</a>
   </div>
 
   <!-- Navigation-->
@@ -248,6 +248,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <!-- Core theme JS-->
   <script src="assets/js/scripts.js"></script>
+  <script type="text/javascript" src="multilang.js"></script>
+  <script>
+    var mlang = new Multilang('lang_data.json', 'en');
+  </script>
 </body>
 
 </html>

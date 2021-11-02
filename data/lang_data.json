@@ -1,0 +1,16 @@
+{
+  "en": {
+    "english": "English",
+    "portuguese": "Portuguese",
+    "saveChanges": "Do you want to save the changes?",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "pt": {
+    "english": "Inglês",
+    "portuguese": "Português",
+    "saveChanges": "Deseja salvar as mudanças?",
+    "yes": "Sim",
+    "no": "Não"
+  }
+}
