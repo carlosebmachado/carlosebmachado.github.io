@@ -1,64 +1,64 @@
 body {
-    background-color: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 .fixed-btns {
-    z-index: 999;
-    position: fixed;
-    top: 2%;
-    right: 1%;
+  z-index: 999;
+  position: fixed;
+  top: 2%;
+  right: 1%;
 }
 
 @media (max-width: 991px) {
-    .fixed-btns {
-        top: 8%;
-    }
+  .fixed-btns {
+    top: 8%;
+  }
 }
 
 .btn-language {
-    display: inline-block;
-    border: none;
-    padding: 5px 10px;
-    width: 70px;
-    text-align: center;
-    cursor: pointer;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    border-radius:20px;
+  display: inline-block;
+  border: none;
+  padding: 5px 10px;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 20px;
 
-    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
-    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+  -webkit-box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
 }
 
 .btn-language:hover {
-    color: var(--white-color);
-    background-color: var(--primary-dark-color);
-    text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--primary-dark-color);
+  text-decoration: none;
 }
 
-.btn-theme:not(:checked), 
+.btn-theme:not(:checked),
 .btn-theme:checked {
-    position: absolute;
-    left: -9999%;
+  position: absolute;
+  left: -9999%;
 }
 
 .btn-theme + label {
-    display: inline-block;
-    padding: 5px 10px;
-    width: 70px;
-    text-align: center;
-    cursor: pointer;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-    margin-bottom: 5px;
-    border-radius:20px;
+  display: inline-block;
+  padding: 5px 10px;
+  width: 70px;
+  text-align: center;
+  cursor: pointer;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  margin-bottom: 5px;
+  border-radius: 20px;
 
-    -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21); 
-    box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.21);
+  -webkit-box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
 }
 
 .btn-theme + label:hover {
-    background-color: var(--primary-dark-color);
+  background-color: var(--primary-dark-color);
 }
 
 /* .btn-theme:checked + label {
@@ -67,23 +67,45 @@ body {
 } */
 
 .skill-wrap {
-    display: inline-block;
-    width: 66px;
+  display: inline-block;
+  width: 66px;
 }
 
 .skill-level-box {
-    display: inline-block;
-    width: 29%;
-    height: 6px;
-    margin-left: 4%;
-    background-color: var(--special-disable-color);
+  display: inline-block;
+  width: 29%;
+  height: 6px;
+  margin-left: 4%;
+  background-color: var(--special-disable-color);
 }
 
 .skill-active {
-    background-color: var(--special-text-color) !important;
+  background-color: var(--special-text-color) !important;
 }
 
 .skill-svg {
-    width: 0.875em;
-    margin-bottom: 10px;
+  width: 0.875em;
+  margin-bottom: 10px;
+}
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader {
+  display: none;
+}
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  /* background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff; */
 }
