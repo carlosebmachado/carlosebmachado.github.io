@@ -11,7 +11,7 @@ body {
 
 @media (max-width: 991px) {
   .fixed-btns {
-    top: 8%;
+    top: 70px;
   }
 }
 
@@ -19,7 +19,7 @@ body {
   display: inline-block;
   border: none;
   padding: 5px 10px;
-  width: 70px;
+  min-width: 70px;
   text-align: center;
   cursor: pointer;
   color: var(--white-color);
@@ -96,4 +96,31 @@ body {
   left: 0;
   background: var(--primary-color) url("../img/loader/loader.gif") no-repeat center;
   z-index: 9999;
+}
+
+#cookies-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--overlay-color);
+    z-index: 1030;
+    text-align: center;
+    padding: 10px 0;
+
+    -webkit-box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15); 
+    box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+}
+
+#cookies-bar p {
+    color: var(--dark-text-color);
+}
+
+.btn-cookie {
+    padding: 3px 10px;
+    min-width: 70px;
+    border: 0;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }

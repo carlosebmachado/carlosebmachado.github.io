@@ -27,6 +27,7 @@
   <div id="loader"></div>
 
   <main id="content">
+    <!-- Language and Theme buttons -->
     <div class="fixed-btns">
       <input class="btn-theme" type="checkbox" id="btn-theme" name="btn-theme" value="btn-theme" checked>
       <label id="btn-theme-label" for="btn-theme">Dark</label>
@@ -38,8 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Carlos Machado</span>
-        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-            src="data/img/avatar/avatar.png" alt="Carlos Machado" /></span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="data/img/avatar/avatar.png" alt="Carlos Machado" /></span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -65,7 +65,7 @@
           <h1 class="mb-0">
             Carlos <span class="text-primary">Machado</span>
           </h1>
-          <p class="lead mb-5">{welcomeText}<a class="js-scroll-trigger lowercase" href="#portfolio">{portfolio}</a><span>.</span></p>
+          <p class="lead mb-5"><span>{welcomeText}</span><a class="lowercase js-scroll-trigger" href="#portfolio">{portfolio}</a><span>.</span></p>
           <div class="social-icons">
             <a class="social-icon" href="https://linkedin.com/in/carlosebmachado/" target="_blank"><i
                 class="fab fa-linkedin"></i></a>
@@ -226,6 +226,12 @@
         </div>
       </section>
     </div>
+
+    <!-- Cookies -->
+    <div id="cookies-bar">
+      <p>{cookieMessage}</p>
+      <button id="btn-cookie-accept" class="btn-cookie">{ok}</button>
+    </div>
   </main>
 
   <!-- Scripts -->
@@ -235,12 +241,6 @@
   <script type="text/javascript" src="assets/js/cookies.js"></script>
   <script type="text/javascript" src="assets/js/multilang.js"></script>
   <script type="text/javascript" src="assets/js/scripts.js"></script>
-  <script>
-    // var preloader = document.getElementById('loader');
-    // function preLoaderHandler(){
-    //     preloader.style.display = 'none';
-    // }
-  </script>
 </body>
 
 </html>

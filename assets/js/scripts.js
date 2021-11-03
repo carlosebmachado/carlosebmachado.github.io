@@ -1,4 +1,4 @@
-window.multilang;
+// Scripts
 
 $(window).on('load', function () {
   var preloader = document.getElementById('loader');
@@ -6,32 +6,31 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-  // theme
-  var theme = getCookie('theme');
-  if (theme != '') {
-    if (theme == 'dark') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  } else {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
+  var lang = getCookie('lang');
+  checkTheme();
+  if (allowCookie()) {
+    hideCookieBar();
   }
-  
-  // language
-  window.multilang = new Multilang('data/lang/', 'pt-br');
+  if (lang === undefined || lang === '' || lang === null) {
+    lang = 'pt-br';
+    setCookie('lang', lang, 365);
+  }
+  setLang('data/lang/', lang);
+});
+
+$('#btn-cookie-accept').on('click', function () {
+  hideCookieBar();
+  setCookie('agree', 'true', 365);
 });
 
 $('#btn-lang').on('click', function () {
   var lang = getCookie('lang');
   if (lang === 'en-us') {
-    window.multilang.setLang('pt-br');
+    setCookie('lang', 'pt-br', 365);
+    window.location.reload();
   } else {
-    window.multilang.setLang('en-us');
+    setCookie('lang', 'en-us', 365);
+    window.location.reload();
   }
 });
 
@@ -48,6 +47,40 @@ $('#btn-theme').on('click', function () {
     setTheme('light');
   }
 });
+
+function allowCookie() {
+  var agree = getCookie('agree');
+  return agree !== '' && agree !== undefined && agree !== null;
+}
+
+function hideCookieBar() {
+  var cookies = document.getElementById('cookies-bar');
+  cookies.style.display = 'none';
+}
+
+function removeAllCookies() {
+  removeCookie('lang');
+  removeCookie('theme');
+  removeCookie('agree');
+}
+
+function checkTheme() {
+  // theme
+  var theme = getCookie('theme');
+  if (theme != '') {
+    if (theme == 'dark') {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  } else {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+  }
+}
 
 function setTheme(theme) {
   if (theme != 'dark' && theme != 'light') return;

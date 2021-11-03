@@ -1,4 +1,5 @@
 // Cookies
+
 function setCookie(name, value, days) {
   if (days) {
     var date = new Date();

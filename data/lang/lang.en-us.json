@@ -27,5 +27,7 @@
   "certification3": "Course Full Project: Node, React, React Native and MongoDB – MSc Rodrigo Santana",
   "certification4": "Course GitHub Zero to Hero – MVP Microsoft Julio Arruda",
   "certification5": "Course Web Design Express – Danki Code",
-  "certification6": "Course PHP Jedai – Danki Code"
+  "certification6": "Course PHP Jedai – Danki Code",
+  "cookieMessage": "This website uses cookies for its operation.",
+  "ok": "Ok"
 }
