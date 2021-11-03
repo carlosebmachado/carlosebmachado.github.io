@@ -1,5 +1,10 @@
 window.multilang;
 
+$(window).on('load', function () {
+  var preloader = document.getElementById('loader');
+  preloader.style.display = 'none';
+});
+
 $(document).ready(function () {
   // language
   window.multilang = new Multilang('data/lang/', 'pt-br');
@@ -61,12 +66,6 @@ function setTheme(theme) {
   link.attr('href', start + 'assets/css/' + theme + '-theme.css');
   setCookie('theme', theme, 365);
 }
-
-// Wait for window load
-$(window).on('load', function () {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");;
-});
 
 /*!
 * Start Bootstrap - Resume v6.0.3 (https://startbootstrap.com/theme/resume)
