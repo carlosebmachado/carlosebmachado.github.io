@@ -52,6 +52,7 @@ body {
   background-color: var(--primary-color);
   margin-bottom: 5px;
   border-radius: 20px;
+  user-select: none;
 
   -webkit-box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.21);
@@ -61,10 +62,9 @@ body {
   background-color: var(--primary-dark-color);
 }
 
-/* .btn-theme:checked + label {
-    color: white;
-    color: var(--primary-bg-color);
-} */
+.lowercase {
+    text-transform: lowercase;
+}
 
 .skill-wrap {
   display: inline-block;
@@ -86,26 +86,4 @@ body {
 .skill-svg {
   width: 0.875em;
   margin-bottom: 10px;
-}
-
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader {
-  display: none;
-}
-.js #loader {
-  display: block;
-  position: absolute;
-  left: 100px;
-  top: 0;
-}
-.se-pre-con {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  /* background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff; */
 }
