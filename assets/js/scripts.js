@@ -6,9 +6,6 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-  // language
-  window.multilang = new Multilang('data/lang/', 'pt-br');
-
   // theme
   var theme = getCookie('theme');
   if (theme != '') {
@@ -24,6 +21,9 @@ $(document).ready(function () {
       setTheme('light');
     }
   }
+  
+  // language
+  window.multilang = new Multilang('data/lang/', 'pt-br');
 });
 
 $('#btn-lang').on('click', function () {
