@@ -86,9 +86,9 @@ function setTheme(theme) {
   if (theme != 'dark' && theme != 'light') return;
   var lbl = document.getElementById('btn-theme-label');
   if (theme == 'dark') {
-    lbl.text = 'Light';
+    lbl.textContent = 'Light';
   } else {
-    lbl.text = 'Dark';
+    lbl.textContent = 'Dark';
   }
   var link = document.getElementById('theme-link');
   var url = String(link.href);
