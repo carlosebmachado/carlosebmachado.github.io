@@ -132,7 +132,7 @@ body {
 /* Scrollbar */
 
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 18px;
 }
 
 ::-webkit-scrollbar-track {
@@ -142,7 +142,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--light-text-color);
   border-radius: 20px;
-  border: 5.5px solid transparent;
+  border: 5px solid transparent;
   background-clip: content-box;
 }
 

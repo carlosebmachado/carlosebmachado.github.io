@@ -81,10 +81,13 @@ function checkTheme() {
 function setTheme(theme) {
   if (theme != 'dark' && theme != 'light') return;
   var lbl = document.getElementById('btn-theme-label');
+  var avatar = document.getElementById('avatar');
   if (theme == 'dark') {
     lbl.textContent = 'Light';
+    avatar.src = 'data/img/avatar/avatar_dark.png'
   } else {
     lbl.textContent = 'Dark';
+    avatar.src = 'data/img/avatar/avatar.png'
   }
   var link = document.getElementById('theme-link');
   link.href = String('assets/css/' + theme + '-theme.css');
