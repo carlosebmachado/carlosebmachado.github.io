@@ -1,11 +1,11 @@
 // Scripts
 
-$(window).on('load', function () {
+window.addEventListener('load', () => {
   var preloader = document.getElementById('loader');
   preloader.style.display = 'none';
-});
+})
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", () => {
   var lang = getCookie('lang');
   checkTheme();
   if (allowCookie()) {
@@ -18,12 +18,12 @@ $(document).ready(function () {
   setLang('data/lang/', lang);
 });
 
-$('#btn-cookie-accept').on('click', function () {
+document.getElementById('btn-cookie-accept').addEventListener('click', () => {
   hideCookieBar();
   setCookie('agree', 'true', 365);
 });
 
-$('#btn-lang').on('click', function () {
+document.getElementById('btn-lang').addEventListener('click', () => {
   var lang = getCookie('lang');
   if (lang === 'en-us') {
     setCookie('lang', 'pt-br', 365);
@@ -34,9 +34,9 @@ $('#btn-lang').on('click', function () {
   }
 });
 
-$('#btn-theme').on('click', function () {
-  var link = $('#theme-link');
-  var url = String(link.attr('href'));
+document.getElementById('btn-theme').addEventListener('click', () => {
+  var link = document.getElementById('theme-link');
+  var url = String(link.getAttribute("href"));
   var start = '../';
   if (!url.startsWith(start)) {
     start = '';
@@ -84,19 +84,19 @@ function checkTheme() {
 
 function setTheme(theme) {
   if (theme != 'dark' && theme != 'light') return;
-  var lbl = $('#btn-theme-label');
+  var lbl = document.getElementById('btn-theme-label');
   if (theme == 'dark') {
-    lbl.text('Light');
+    lbl.text = 'Light';
   } else {
-    lbl.text('Dark');
+    lbl.text = 'Dark';
   }
-  var link = $('#theme-link');
-  var url = String(link.attr('href'));
+  var link = document.getElementById('theme-link');
+  var url = String(link.href);
   var start = '../';
   if (!url.startsWith(start)) {
     start = '';
   }
-  link.attr('href', start + 'assets/css/' + theme + '-theme.css');
+  link.href = String(start + 'assets/css/' + theme + '-theme.css');
   setCookie('theme', theme, 365);
 }
 
@@ -105,40 +105,29 @@ function setTheme(theme) {
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-(function ($) {
-  "use strict"; // Start of use strict
 
-  // Smooth scrolling using anime.js
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').on('click', function () {
-    if (
-      location.pathname.replace(/^\//, "") ==
-      this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ?
-        target :
-        $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        anime({
-          targets: 'html, body',
-          scrollTop: target.offset().top,
-          duration: 1000,
-          easing: 'easeInOutExpo'
-        });
-        return false;
-      }
-    }
+window.addEventListener('DOMContentLoaded', event => {
+
+  // Activate Bootstrap scrollspy on the main nav element
+  const sideNav = document.body.querySelector('#sideNav');
+  if (sideNav) {
+      new bootstrap.ScrollSpy(document.body, {
+          target: '#sideNav',
+          offset: 74,
+      });
+  };
+
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+      document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+      responsiveNavItem.addEventListener('click', () => {
+          if (window.getComputedStyle(navbarToggler).display !== 'none') {
+              navbarToggler.click();
+          }
+      });
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").on('click', function () {
-    $(".navbar-collapse").collapse("hide");
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#mainNav"
-  });
-
-})(jQuery); // End of use strict
+});
