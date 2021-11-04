@@ -37,13 +37,9 @@ document.getElementById('btn-lang').addEventListener('click', () => {
 document.getElementById('btn-theme').addEventListener('click', () => {
   var link = document.getElementById('theme-link');
   var url = String(link.getAttribute("href"));
-  var start = '../';
-  if (!url.startsWith(start)) {
-    start = '';
-  }
-  if (url == start + 'assets/css/light-theme.css') {
+  if (url == 'assets/css/light-theme.css') {
     setTheme('dark');
-  } else if (url == start + 'assets/css/dark-theme.css') {
+  } else if (url == 'assets/css/dark-theme.css') {
     setTheme('light');
   }
 });
@@ -91,12 +87,7 @@ function setTheme(theme) {
     lbl.textContent = 'Dark';
   }
   var link = document.getElementById('theme-link');
-  var url = String(link.href);
-  var start = '../';
-  if (!url.startsWith(start)) {
-    start = '';
-  }
-  link.href = String(start + 'assets/css/' + theme + '-theme.css');
+  link.href = String('assets/css/' + theme + '-theme.css');
   setCookie('theme', theme, 365);
 }
 
