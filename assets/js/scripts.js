@@ -100,6 +100,7 @@ function setTheme(theme) {
   setCookie('theme', theme, 365);
 }
 
+
 /*!
 * Start Bootstrap - Resume v6.0.3 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2021 Start Bootstrap
