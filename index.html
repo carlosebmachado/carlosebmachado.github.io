@@ -32,7 +32,7 @@
       <input class="btn-theme" type="checkbox" id="btn-theme" name="btn-theme" value="btn-theme" checked>
       <label id="btn-theme-label" for="btn-theme">Dark</label>
       <input class="btn-theme" type="checkbox" id="btn-lang" name="btn-lang" value="btn-lang" checked>
-      <label id="btn-lang-label" for="btn-lang">{language}</label>
+      <label id="btn-lang-label" for="btn-lang"><span class="language"></span></label>
     </div>
   
     <!-- Navigation -->
@@ -46,12 +46,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">{about}</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">{experience}</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">{education}</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">{skills}</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">{portfolio}</a></li>
-          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">{certifications}</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about"><span class="about"></span></a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"><span class="experience"></span></a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"><span class="education"></span></a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"><span class="skills"></span></a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio"><span class="portfolio"></span></a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards"><span class="certifications"></span></a></li>
         </ul>
       </div>
     </nav>
@@ -65,18 +65,13 @@
           <h1 class="mb-0">
             Carlos <span class="text-primary">Machado</span>
           </h1>
-          <p class="lead mb-5"><span>{welcomeText}</span><a class="lowercase js-scroll-trigger" href="#portfolio">{portfolio}</a><span>.</span></p>
+          <p class="lead mb-5"><span><span class="welcomeText"></span></span><a class="lowercase js-scroll-trigger" href="#portfolio"><span class="portfolio"></span></a>.</p>
           <div class="social-icons">
-            <a class="social-icon" href="https://linkedin.com/in/carlosebmachado/" target="_blank"><i
-                class="fab fa-linkedin"></i></a>
-            <a class="social-icon" href="https://github.com/carlosebmachado" target="_blank"><i
-                class="fab fa-github"></i></a>
-            <a class="social-icon" href="https://keybase.io/carlosebmachado" target="_blank"><i
-                class="fab fa-keybase"></i></a>
-            <a class="social-icon" href="mailto:carlosebmachado@outlook.com" target="_blank"><i
-                class="fas fa-envelope"></i></a>
-            <a class="social-icon" href="data/doc/CV.pdf" download="Carlos Machado - CV" target="_blank"><i
-                class="fas fa-file-download"></i></a>
+            <a class="social-icon" href="https://linkedin.com/in/carlosebmachado/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="social-icon" href="https://github.com/carlosebmachado" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="https://keybase.io/carlosebmachado" target="_blank"><i class="fab fa-keybase"></i></a>
+            <a class="social-icon" href="mailto:carlosebmachado@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a class="social-icon" href="data/doc/CV.pdf" download="Carlos Machado - CV" target="_blank"><i class="fas fa-file-download"></i></a>
           </div>
         </div>
       </section>
@@ -85,14 +80,14 @@
       <!-- Experience-->
       <section class="resume-section" id="experience">
         <div class="resume-section-content">
-          <h2 class="mb-5">{experience}</h2>
+          <h2 class="mb-5"><span class="experience"></span></h2>
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-              <h3 class="mb-0">{position1}</h3>
-              <div class="subheading mb-3">{univaliFullName}</div>
-              <p>{posDescription1}</p>
+              <h3 class="mb-0"><span class="position1"></span></h3>
+              <div class="subheading mb-3"><span class="univaliFullName"></span></div>
+              <p><span class="posDescription1"></span></p>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">{posDate1}</span></div>
+            <div class="flex-shrink-0"><span class="text-primary"><span class="posDate1"></span></span></div>
           </div>
         </div>
       </section>
@@ -101,13 +96,13 @@
       <!-- Education -->
       <section class="resume-section" id="education">
         <div class="resume-section-content">
-          <h2 class="mb-5">{education}</h2>
+          <h2 class="mb-5"><span class="certifications"></span><span class="education"></span></h2>
           <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="flex-grow-1">
-              <h3 class="mb-0">{univaliFullName}</h3>
-              <div class="subheading mb-3">{degree1}</div>
+              <h3 class="mb-0"><span class="certifications"></span><span class="univaliFullName"></span></h3>
+              <div class="subheading mb-3"><span class="certifications"></span><span class="degree1"></span></div>
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">{degreeDate1}</span></div>
+            <div class="flex-shrink-0"><span class="text-primary"><span class="certifications"></span><span class="degreeDate1"></span></span></div>
           </div>
         </div>
       </section>
@@ -116,8 +111,8 @@
       <!-- Skills -->
       <section class="resume-section" id="skills">
         <div class="resume-section-content">
-          <h2 class="mb-5">{skills}</h2>
-          <div class="subheading mb-3">{languages}</div>
+          <h2 class="mb-5"><span class="certifications"></span></h2>
+          <div class="subheading mb-3"><span class="languages"></span></div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item"><i class="fab fa-html5"></i></li>
             <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
@@ -144,7 +139,7 @@
             <li class="list-inline-item"><i class="fab fa-java"></i></li>
             <li class="list-inline-item"><i class="fab fa-python"></i></li>
           </ul>
-          <div class="subheading mb-3">{tools}</div>
+          <div class="subheading mb-3"><span class="tools"></span></div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item"><i class="fab fa-react"></i></li>
             <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
@@ -164,31 +159,31 @@
       <section class="resume-section" id="portfolio">
         <div class="resume-section-content">
   
-          <h2 class="mb-5">{portfolio}</h2>
+          <h2 class="mb-5"><span class="portfolio"></span></h2>
   
           <div class="row">
   
             <div class="col-md d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
                 <a href="https://github.com/carlosebmachado/little-computer-3" target="_blank">
-                  <h3 class="mb-2">{projTitle1}</h3>
+                  <h3 class="mb-2"><span class="projTitle1"></span></h3>
                 </a>
-                <p>{projDescription1}</p>
+                <p><span class="projDescription1"></span></p>
               </div>
             </div>
   
             <div class="col-md d-flex flex-column flex-md-row justify-content-between mb-5">
               <div class="flex-grow-1">
                 <a href="https://github.com/carlosebmachado/the-blog" target="_blank">
-                  <h3 class="mb-2">{projTitle2}</h3>
+                  <h3 class="mb-2"><span class="projTitle2"></span></h3>
                 </a>
-                <p>{projDescription2}</p>
+                <p><span class="projDescription2"></span></p>
               </div>
             </div>
   
           </div>
   
-          <h3 class="my-5">{ctaGithub}<a href="https://github.com/carlosebmachado" target="_blank">github</a><span>.</span></h3>
+          <h3 class="my-5"><span class="ctaGithub"></span><a href="https://github.com/carlosebmachado" target="_blank">github</a>.</h3>
         </div>
       </section>
       <hr class="m-0" />
@@ -196,31 +191,31 @@
       <!-- Certifications -->
       <section class="resume-section" id="awards">
         <div class="resume-section-content">
-          <h2 class="mb-5">{certifications}</h2>
+          <h2 class="mb-5"><span class="certifications"></span></h2>
           <ul class="fa-ul mb-0">
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification1}</span>
+              <span class="certification1"></span>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification2}</span>
+              <span class="certification2"></span>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification3}</span>
+              <span class="certification3"></span>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification4}</span>
+              <span class="certification4"></span>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification5}</span>
+              <span class="certification5"></span>
             </li>
             <li>
               <span class="fa-li"><i class="fas fa-check"></i></span>
-              <span>{certification6}</span>
+              <span class="certification6"></span>
             </li>
           </ul>
         </div>
@@ -229,8 +224,8 @@
 
     <!-- Cookies -->
     <div id="cookies-bar">
-      <p>{cookieMessage}</p>
-      <button id="btn-cookie-accept" class="btn-cookie">{ok}</button>
+      <p><span class="cookieMessage"></span></p>
+      <button id="btn-cookie-accept" class="btn-cookie"><span class="ok"></span></button>
     </div>
   </main>
 

@@ -18,12 +18,28 @@ function setLang(path, lang) {
   });
 
   // paser body
+  // var elements = document.querySelectorAll('body *');
+  // elements = [...elements];
+  // elements = elements.reverse();
+  // elements.forEach(element => {
+  //   parseElement(element, langData);
+  // });
   var elements = document.querySelectorAll('body *');
   elements = [...elements];
-  elements = elements.reverse();
   elements.forEach(element => {
-    parseElement(element, langData);
+    parseClass(element, langData)
   });
+
+}
+
+function parseClass(element, langData) {
+  try {
+    if (langData[element.className] != undefined) {
+      element.innerHTML = langData[element.className] + element.innerHTML;
+    }
+  } catch (e) {
+    console.error(e);
+  }
 }
 
 function parseElement(element, langData) {
