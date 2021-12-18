@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (allowCookie()) {
     hideCookieBar();
   }
-  if (lang === undefined || lang === '' || lang === null) {
+  if (lang === undefined || lang === null || lang === '') {
     lang = 'pt-br';
     setCookie('lang', lang, 365);
   }
@@ -47,7 +47,7 @@ document.getElementById('btn-theme').addEventListener('click', () => {
 
 function allowCookie() {
   var agree = getCookie('agree');
-  return agree !== '' && agree !== undefined && agree !== null;
+  return agree !== undefined && agree !== null && agree !== '' ;
 }
 
 function hideCookieBar() {
@@ -65,11 +65,7 @@ function checkTheme() {
   // theme
   var theme = getCookie('theme');
   if (theme != '') {
-    if (theme == 'dark') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
+    setTheme(theme);
   } else {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setTheme('dark');
@@ -80,7 +76,13 @@ function checkTheme() {
 }
 
 function setTheme(theme) {
-  if (theme != 'dark' && theme != 'light') return;
+  if (theme != 'dark' && theme != 'light') {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    } else {
+      theme = 'light';
+    }
+  }
   var lbl = document.getElementById('btn-theme-label');
   var avatar = document.getElementById('avatar');
   if (theme == 'dark') {
