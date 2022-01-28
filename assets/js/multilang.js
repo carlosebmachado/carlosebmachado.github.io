@@ -34,8 +34,8 @@ function setLang(path, lang) {
 
 function parseClass(element, langData) {
   try {
-    if (langData[element.className] != undefined && element.tagName === 'W') {
-      element.innerHTML = langData[element.className] + element.innerHTML;
+    if (langData[element.getAttribute('key')] != undefined && element.tagName === 'WORD') {
+      element.innerHTML = langData[element.getAttribute('key')] + element.innerHTML;
     }
   } catch (e) {
     console.error(e);
