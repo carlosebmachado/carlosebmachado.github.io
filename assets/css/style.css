@@ -103,6 +103,9 @@ body {
 }
 
 #cookies-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -110,7 +113,8 @@ body {
   background-color: var(--overlay-color);
   z-index: 1030;
   text-align: center;
-  padding: 10px 0;
+  height: 50px;
+  padding: 0 30px;
 
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.15);
@@ -118,15 +122,13 @@ body {
 
 #cookies-bar p {
   color: var(--dark-text-color);
+  margin-bottom: 0;
 }
 
 .btn-cookie {
-  padding: 3px 10px;
-  min-width: 70px;
   border: 0;
-  color: var(--white-color);
-  background-color: var(--primary-color);
-  border-radius: 20px;
+  color: var(--dark-text-color);
+  background: none;
 }
 
 /* Scrollbar */
