@@ -10,31 +10,34 @@ function setLang(path, lang) {
   html.lang = lang;
 
   // parse head
-  var head = document.getElementsByTagName('head')[0];
-  head.childNodes.forEach(element => {
-    if (element.tagName !== 'SCRIPT' && element.tagName !== 'STYLE' && element.tagName !== 'LINK') {
-      element.outerHTML = parse(element.outerHTML, langData);
-    }
-  });
+  document.title = langData['websiteTitle'];
+  document.querySelector('meta[name="description"]').content = langData['metaDescription'];
+  document.querySelector('meta[name="keywords"]').content = langData['metaTags'];
+  // var head = document.getElementsByTagName('head')[0];
+  // head.childNodes.forEach(element => {
+  //   if (element.tagName !== 'SCRIPT' && element.tagName !== 'STYLE' && element.tagName !== 'LINK') {
+  //     element.outerHTML = parse(element.outerHTML, langData);
+  //   }
+  // });
 
   // paser body
+  var elements = document.querySelectorAll('body *');
+  elements = [...elements];
+  elements.forEach(element => {
+    parseClass(element, langData)
+  });
   // var elements = document.querySelectorAll('body *');
   // elements = [...elements];
   // elements = elements.reverse();
   // elements.forEach(element => {
   //   parseElement(element, langData);
   // });
-  var elements = document.querySelectorAll('body *');
-  elements = [...elements];
-  elements.forEach(element => {
-    parseClass(element, langData)
-  });
 
 }
 
 function parseClass(element, langData) {
   try {
-    if (langData[element.getAttribute('key')] != undefined && element.tagName === 'WORD') {
+    if (langData[element.getAttribute('key')] != undefined && element.tagName === 'LTAG') {
       element.innerHTML = langData[element.getAttribute('key')] + element.innerHTML;
     }
   } catch (e) {
