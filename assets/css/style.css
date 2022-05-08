@@ -98,7 +98,7 @@ body {
   height: 100vh;
   top: 0;
   left: 0;
-  background: var(--primary-color) url("../img/loader/loader.gif") no-repeat center;
+  background: #161b22 url("../img/loader/loader.gif") no-repeat center;
   z-index: 9999;
 }
 
