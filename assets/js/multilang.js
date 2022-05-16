@@ -1,6 +1,13 @@
-// Multilang
-// Author: Carlos Machado
+/*!
+ * Multilang
+ * Author: Carlos Machado
+ */
 
+/**
+ * Set the informed language
+ * @param {*} path Path to the lang file
+ * @param {*} lang Language to be set
+ */
 function setLang(path, lang) {
   fullPath = path + 'lang.' + lang + '.json';
   langData = loadLangData(fullPath);
@@ -8,11 +15,6 @@ function setLang(path, lang) {
   // set html lang tag
   var html = document.getElementsByTagName('html')[0];
   html.lang = lang;
-
-  // set lang param
-  // var url = new URL(window.location.href);
-  // url.searchParams.set('lang', lang);
-  // window.location.href = url.href;
 
   // parse head
   document.title = langData['websiteTitle'];
@@ -28,6 +30,11 @@ function setLang(path, lang) {
 
 }
 
+/**
+ * Parse element and replace text
+ * @param {*} element Element to be parsed
+ * @param {*} langData Language data
+ */
 function parse(element, langData) {
   try {
     if (langData[element.getAttribute('key')] != undefined && element.tagName === 'LTAG') {
@@ -38,6 +45,11 @@ function parse(element, langData) {
   }
 }
 
+/**
+ * Load language data
+ * @param {*} path Path to the lang file
+ * @returns Data from the lang file
+ */
 function loadLangData(path) {
   var langData;
   loadJSON(function (response) {
@@ -46,6 +58,11 @@ function loadLangData(path) {
   return langData;
 }
 
+/**
+ * Load JSON file
+ * @param {*} callback Function to be called when the lang file is loaded
+ * @param {*} path Path to the lang file
+ */
 function loadJSON(callback, path) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType('application/json');
