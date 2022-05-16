@@ -10,9 +10,9 @@ function setLang(path, lang) {
   html.lang = lang;
 
   // set lang param
-  var url = new URL(window.location.href);
-  url.searchParams.set('lang', lang);
-  window.location.href = url.href;
+  // var url = new URL(window.location.href);
+  // url.searchParams.set('lang', lang);
+  // window.location.href = url.href;
 
   // parse head
   document.title = langData['websiteTitle'];
