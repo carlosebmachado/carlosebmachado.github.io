@@ -40,9 +40,15 @@
       "period": "07/2023 — Atualmente"
     }
   ],
-  "languagesAndTools": "Linguagens e Ferramentas",
+  "languagesAndTools": "Linguagens & Ferramentas",
   "languages": "Linguagens",
   "tools": "Ferramentas",
+  "competencies": "Competências",
+  "_competencies": [
+    "Desenvolvimento Full Cycle para Mobile & Web",
+    "Testes Unitários",
+    "Kanban & Desenvolvimento Ágil"
+  ],
   "_projects": [
     {
       "title": "ToDo",

@@ -1,5 +1,5 @@
 /*!
- * Multilang
+ * MultiLang
  * Author: Carlos Machado
  */
 
@@ -40,7 +40,7 @@ class MultiLang {
   static parse(element, langData) {
     try {
       if (element.tagName === 'SPAN' && element.hasAttribute('ltag')) {
-        element.textContent = NestedKey.search(langData, element.getAttribute('ltag'));
+        element.textContent = NestedKey.get(langData, element.getAttribute('ltag'));
       }
     } catch (e) {
       console.error(e);

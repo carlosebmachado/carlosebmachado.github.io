@@ -1,5 +1,5 @@
 /*!
- * Cookies
+ * Cookie
  */
 
 class Cookie {

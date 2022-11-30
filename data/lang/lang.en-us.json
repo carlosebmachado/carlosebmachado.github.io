@@ -43,6 +43,12 @@
   "languagesAndTools": "Languages & Tools",
   "languages": "Languages",
   "tools": "Tools",
+  "competencies": "Competencies",
+  "_competencies": [
+    "Mobile & Web Full Cycle Development",
+    "Unit Testing",
+    "Agile Development & Kanban"
+  ],
   "_projects": [
     {
       "title": "ToDo",

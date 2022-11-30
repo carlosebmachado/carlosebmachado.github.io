@@ -1,5 +1,5 @@
 /*!
- * Multilang
+ * NestedKey
  * Author: Carlos Machado
  */
 
@@ -29,7 +29,7 @@ class NestedKey {
     return NestedKey._search(obj[key], keys);
   }
 
-  static search(obj, nestedKey) {
+  static get(obj, nestedKey) {
     var keys = NestedKey._parseKeys(nestedKey);
     return NestedKey._search(obj, keys);
   }

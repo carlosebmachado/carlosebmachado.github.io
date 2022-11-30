@@ -19,6 +19,16 @@ body {
   }
 }
 
+@media (max-width: 425px) {
+  .social-icons {
+    text-align: center;
+  }
+}
+
+.social-icon {
+  margin-bottom: 20px;
+}
+
 .btn-language {
   display: inline-block;
   border: none;
