@@ -26,7 +26,7 @@ document.getElementById('btn-cookie-accept').addEventListener('click', () => {
 });
 
 document.getElementById('btn-lang').addEventListener('click', () => {
-  var lang = getCookie('lang');
+  var lang = Cookie.get('lang');
   if (lang === 'en-us') {
     Cookie.set('lang', 'pt-br', 365);
   } else {
