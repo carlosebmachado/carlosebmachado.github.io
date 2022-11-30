@@ -37,8 +37,8 @@ function setLang(path, lang) {
  */
 function parse(element, langData) {
   try {
-    if (element.tagName === 'LTAG') {
-        element.innerHTML = nestedKeySearch(langData, element.getAttribute('key')) + element.innerHTML;
+    if (element.tagName === 'SPAN' && element.hasAttribute('ltag')) {
+      element.textContent = nestedKeySearch(langData, element.getAttribute('ltag'));
     }
   } catch (e) {
     console.error(e);
