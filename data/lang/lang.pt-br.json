@@ -10,25 +10,57 @@
   "portfolio": "Portfólio",
   "certifications": "Certificações",
   "welcomeText": "Olá. Sou um desenvolvedor full-stack e atualmente curso Ciência da Computação. Estou sempre em busca de novos conhecimentos e tenho muita curiosidade em saber como as coisas são construídas. Eu amo programar! Já desenvolvi diversos projetos pessoais como applicações web e mobile. Veja meu ",
-  "position1": "Desenvolvedor Web Júnior",
-  "posDescription1": "Responsável por desenvolver e manter sistemas web da universidade.",
-  "posDate1": "07/2021 — Atualmente",
+  "_positions": [
+    {
+      "title": "Programador Júnior",
+      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
+      "period": "07/2021 — 08/2022"
+    },
+    {
+      "title": "Programador Pleno",
+      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
+      "period": "09/2022 — 10/2022"
+    },
+    {
+      "title": "Analista de Sistemas Júnior",
+      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
+      "period": "11/2022 — Atualmente"
+    }
+  ],
   "univaliFullName": "UNIVALI – Universidade do Vale do Itajaí",
-  "degree1": "Bacharelado em Ciência da Computação",
-  "degreeDate1": "01/2018 — Atualmente",
+  "_degrees": [
+    {
+      "title": "Bacharelado em Ciência da Computação",
+      "description": "",
+      "period": "01/2018 — 12/2022"
+    },
+    {
+      "title": "Especialização em Engenharia de Software",
+      "description": "",
+      "period": "07/2023 — Atualmente"
+    }
+  ],
+  "languagesAndTools": "Linguagens e Ferramentas",
   "languages": "Linguagens",
   "tools": "Ferramentas",
-  "projTitle1": "ToDo",
-  "projDescription1": "O ToDo é um aplicativo de gerenciamento de tarefas. O back-end foi feito com Node.js e MongoDB, o app web com React.js e o app mobile com React Native.",
-  "projTitle2": "The Blog",
-  "projDescription2": "O The Blog é um blog feito em PHP usando o padrão MVC, banco de dados MySQL e o framework bootstrap. O conteúdo é gerenciado pelo painel Admin.",
+  "_projects": [
+    {
+      "title": "ToDo",
+      "description": "O ToDo é um aplicativo de gerenciamento de tarefas. O back-end foi feito com Node.js e MongoDB, o app web com React.js e o app mobile com React Native.",
+      "link": ""
+    },
+    {
+      "title": "The Blog",
+      "description": "O The Blog é um blog feito em PHP usando o padrão MVC, banco de dados MySQL e o framework bootstrap. O conteúdo é gerenciado pelo painel Admin.",
+      "link": ""
+    }
+  ],
   "ctaGithub": "Veja mais em meu ",
-  "certification1": "Trabalho Voluntário – APAE Barra Velha – Fui responsável pela implantação de seu website institucional e capacitação da equipe de administração.",
-  "certification2": "Inglês – CEFR Level C1 (Cursando)",
-  "certification3": "Curso Projeto Completo: Node, React, React Native e MongoDB – MSc Rodrigo Santana",
-  "certification4": "Curso GitHub Zero to Hero – MVP Microsoft Julio Arruda",
-  "certification5": "Curso Web Design Express – Danki Code",
-  "certification6": "Curso PHP Jedai – Danki Code",
+  "_certifications": [
+    "Trabalho Voluntário – APAE Barra Velha – Fui responsável pela implantação de seu website institucional e capacitação da equipe de administração.",
+    "Inglês – CEFR Level C1 (Cursando)",
+    "Curso GitHub Zero to Hero – MVP Microsoft Julio Arruda"
+  ],
   "cookieMessage": "Este site utiliza cookies para o seu funcionamento.",
   "ok": "Ok"
 }

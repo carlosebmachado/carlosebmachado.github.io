@@ -10,25 +10,57 @@
   "portfolio": "Portfolio",
   "certifications": "Certifications",
   "welcomeText": "Hello. I am a full stack developer and I am currently studying Computer Science. I am always looking for new knowledge and I am very curious to know how things are built. I love to code! I have already developed several personal projects such as web and mobile applications. See my ",
-  "position1": "Junior Web Developer",
-  "posDescription1": "Responsible for developing and maintaining university web systems.",
-  "posDate1": "2021-07 — Currently",
+  "_positions": [
+    {
+      "title": "Junior Programmer",
+      "description": "Responsible for developing and maintaining university web systems.",
+      "period": "2021-07 — 2022-08"
+    },
+    {
+      "title": "Programmer",
+      "description": "Responsible for developing and maintaining university web systems.",
+      "period": "2022-09 — 2022-10"
+    },
+    {
+      "title": "Junior Systems Analyst",
+      "description": "Responsible for developing and maintaining university web systems.",
+      "period": "2022-11 — Currently"
+    }
+  ],
   "univaliFullName": "UNIVALI – Univesity of Itajaí Valley",
-  "degree1": "Bachelor of Computer Science",
-  "degreeDate1": "2018-01 — Currently",
+  "_degrees": [
+    {
+      "title": "Bachelor of Computer Science",
+      "description": "",
+      "period": "2018-01 — 2022-12"
+    },
+    {
+      "title": "Software Engineering Especialization",
+      "description": "",
+      "period": "2023-07 — Currently"
+    }
+  ],
+  "languagesAndTools": "Languages & Tools",
   "languages": "Languages",
   "tools": "Tools",
-  "projTitle1": "ToDo",
-  "projDescription1": "ToDo is a task management application. The backend was made with Node.js and MongoDB, the web app with React.js and the mobile app with React Native.",
-  "projTitle2": "The Blog",
-  "projDescription2": "The Blog is a blog made in PHP using the MVC pattern, MySQL database and bootstrap framework. Content is managed by the Admin panel.",
+  "_projects": [
+    {
+      "title": "ToDo",
+      "description": "ToDo is a task management application. The backend was made with Node.js and MongoDB, the web app with React.js and the mobile app with React Native.",
+      "link": ""
+    },
+    {
+      "title": "The Blog",
+      "description": "The Blog is a blog made in PHP using the MVC pattern, MySQL database and bootstrap framework. Content is managed by the Admin panel.",
+      "link": ""
+    }
+  ],
   "ctaGithub": "See more in my ",
-  "certification1": "Volunteer work – APAE Barra Velha – I was responsible for implementing its institutional website and training the administration team.",
-  "certification2": "English – CEFR Level C1 (In progress)",
-  "certification3": "Course Full Project: Node, React, React Native and MongoDB – MSc Rodrigo Santana",
-  "certification4": "Course GitHub Zero to Hero – MVP Microsoft Julio Arruda",
-  "certification5": "Course Web Design Express – Danki Code",
-  "certification6": "Course PHP Jedai – Danki Code",
+  "_certifications": [
+    "Volunteer work – APAE Barra Velha – I was responsible for implementing its institutional website and training the administration team.",
+    "English – CEFR Level C1 (In progress)",
+    "Course GitHub Zero to Hero – MVP Microsoft Julio Arruda"
+  ],
   "cookieMessage": "This website uses cookies for its operation.",
   "ok": "Ok"
 }

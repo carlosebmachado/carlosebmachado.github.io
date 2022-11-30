@@ -37,12 +37,41 @@ function setLang(path, lang) {
  */
 function parse(element, langData) {
   try {
-    if (langData[element.getAttribute('key')] != undefined && element.tagName === 'LTAG') {
-      element.innerHTML = langData[element.getAttribute('key')] + element.innerHTML;
+    if (element.tagName === 'LTAG') {
+        element.innerHTML = nestedKeySearch(langData, element.getAttribute('key')) + element.innerHTML;
     }
   } catch (e) {
     console.error(e);
   }
+}
+
+function parseKeys(nestedKey) {
+  var auxKeys = nestedKey.split('.');
+  var keys = [];
+  for (let i = 0; i < auxKeys.length; i++) {
+    if (RegExp(/^[a-zA-Z_]+[a-zA-Z0-9_]?\[\d\]$/).test(auxKeys[i])) {
+      var key = auxKeys[i].replace(/\[\d\]/, '');
+      var index = auxKeys[i].replace(/^(.)+(\[)(\d)(\])$/, '$3');
+      keys.push(key);
+      keys.push(index);
+    } else {
+      keys.push(auxKeys[i]);
+    }
+  }
+  return keys;
+}
+
+function nestedKeyParse(obj, keys) {
+  var key = keys.shift();
+  if (key === undefined) {
+    return obj;
+  }
+  return nestedKeyParse(obj[key], keys);
+}
+
+function nestedKeySearch(obj, nestedKey) {
+  var keys = parseKeys(nestedKey);
+  return nestedKeyParse(obj, keys);  
 }
 
 /**
