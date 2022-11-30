@@ -22,15 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.getElementById('btn-cookie-accept').addEventListener('click', () => {
   hideCookieBar();
-  setCookie('agree', 'true', 365);
+  Cookie.set('agree', 'true', 365);
 });
 
 document.getElementById('btn-lang').addEventListener('click', () => {
   var lang = getCookie('lang');
   if (lang === 'en-us') {
-    setCookie('lang', 'pt-br', 365);
+    Cookie.set('lang', 'pt-br', 365);
   } else {
-    setCookie('lang', 'en-us', 365);
+    Cookie.set('lang', 'en-us', 365);
   }
   setLanguage();
 });
@@ -52,7 +52,7 @@ document.getElementById('btn-theme').addEventListener('click', () => {
 //
 
 function allowCookie() {
-  var agree = getCookie('agree');
+  var agree = Cookie.get('agree');
   return agree !== undefined && agree !== null && agree !== '';
 }
 
@@ -62,14 +62,14 @@ function hideCookieBar() {
 }
 
 function removeAllCookies() {
-  removeCookie('lang');
-  removeCookie('theme');
-  removeCookie('agree');
+  Cookie.remove('lang');
+  Cookie.remove('theme');
+  Cookie.remove('agree');
 }
 
 function checkTheme() {
   // theme
-  var theme = getCookie('theme');
+  var theme = Cookie.get('theme');
   if (theme != '') {
     setTheme(theme);
   } else {
@@ -82,12 +82,12 @@ function checkTheme() {
 }
 
 function setLanguage() {
-  var lang = getCookie('lang');
+  var lang = Cookie.get('lang');
   if (lang === undefined || lang === null || lang === '') {
     lang = 'pt-br';
-    setCookie('lang', lang, 365);
+    Cookie.set('lang', lang, 365);
   }
-  setLang('data/lang/', lang);
+  MultiLang.setLang('data/lang/', lang);
 }
 
 function setTheme(theme) {
@@ -109,7 +109,7 @@ function setTheme(theme) {
   }
   var link = document.getElementById('theme-link');
   link.href = String('assets/css/' + theme + '-theme.css');
-  setCookie('theme', theme, 365);
+  Cookie.set('theme', theme, 365);
 }
 
 
