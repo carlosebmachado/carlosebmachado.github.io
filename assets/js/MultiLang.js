@@ -12,7 +12,7 @@ class MultiLang {
    */
   static setLang(path, lang) {
     var fullPath = path + 'lang.' + lang + '.json';
-    var langData = MultiLang.loadLangData(fullPath);
+    var langData = MultiLang._loadLangData(fullPath);
 
     // set html lang tag
     var html = document.getElementsByTagName('html')[0];
@@ -27,7 +27,7 @@ class MultiLang {
     var elements = document.querySelectorAll('body *');
     elements = [...elements];
     elements.forEach(element => {
-      MultiLang.parse(element, langData)
+      MultiLang._parse(element, langData)
     });
 
   }
@@ -37,7 +37,7 @@ class MultiLang {
    * @param {*} element Element to be parsed
    * @param {*} langData Language data
    */
-  static parse(element, langData) {
+  static _parse(element, langData) {
     try {
       if (element.tagName === 'SPAN' && element.hasAttribute('ltag')) {
         element.textContent = NestedKey.get(langData, element.getAttribute('ltag'));
@@ -52,9 +52,9 @@ class MultiLang {
    * @param {*} path Path to the lang file
    * @returns Data from the lang file
    */
-  static loadLangData(path) {
+  static _loadLangData(path) {
     var langData;
-    MultiLang.loadJSON(function (response) {
+    MultiLang._loadJSON(function (response) {
       langData = JSON.parse(response);
     }, path);
     return langData;
@@ -65,7 +65,7 @@ class MultiLang {
    * @param {*} callback Function to be called when the lang file is loaded
    * @param {*} path Path to the lang file
    */
-  static loadJSON(callback, path) {
+  static _loadJSON(callback, path) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType('application/json');
     xobj.open('GET', path, false);

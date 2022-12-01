@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  font-family: "Muli", "Open Sans", sans-serif;
   background-color: var(--primary-bg-color);
   padding-top: 3.375rem;
   color: var(--light-text-color);
@@ -14,16 +15,60 @@ h3,
 h4,
 h5,
 h6 {
+  margin-bottom: 0.5rem;
+  font-family: "Saira Extra Condensed", "Open Sans", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-text-color);
 }
 
 h1 {
   line-height: 1;
 }
 
+h1,
+.h1 {
+  font-size: 6rem;
+}
+
+h2,
+.h2 {
+  font-size: 3.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 2rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1rem;
+}
+
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--special-text-color);
 }
 
 .subheading {
@@ -167,7 +212,7 @@ section.resume-section .resume-section-content {
   height: 100vh;
   top: 0;
   left: 0;
-  background: #161b22 url("../img/loader/loader.gif") no-repeat center;
+  background: #161b22 url("../img/loader.gif") no-repeat center;
   z-index: 9999;
 }
 
@@ -202,14 +247,16 @@ section.resume-section .resume-section-content {
 
 /* Media definitions */
 
+@media (max-width: 991px) {
+  .fixed-btns {
+    top: 70px;
+  }
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 0;
     padding-left: 17rem;
-  }
-
-  .fixed-btns {
-    top: 70px;
   }
 
   section.resume-section {
@@ -277,6 +324,14 @@ section.resume-section .resume-section-content {
 }
 
 /* Reusable */
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--special-text-color) !important;
+}
 
 .lowercase {
   text-transform: lowercase;

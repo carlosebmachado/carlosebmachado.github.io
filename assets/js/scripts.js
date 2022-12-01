@@ -38,9 +38,9 @@ document.getElementById('btn-lang').addEventListener('click', () => {
 document.getElementById('btn-theme').addEventListener('click', () => {
   var link = document.getElementById('theme-link');
   var url = String(link.getAttribute("href"));
-  if (url == 'assets/css/light-theme.css') {
+  if (url == 'assets/css/theme/light.css') {
     setTheme('dark');
-  } else if (url == 'assets/css/dark-theme.css') {
+  } else if (url == 'assets/css/theme/dark.css') {
     setTheme('light');
   }
 });
@@ -108,7 +108,7 @@ function setTheme(theme) {
     avatar.src = 'data/img/avatar/avatar.png'
   }
   var link = document.getElementById('theme-link');
-  link.href = String('assets/css/' + theme + '-theme.css');
+  link.href = String(`assets/css/theme/${theme}.css`);
   Cookie.set('theme', theme, 365);
 }
 
