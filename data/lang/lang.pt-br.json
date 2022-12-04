@@ -1,30 +1,30 @@
 {
   "language": "EN-US",
   "websiteTitle": "Carlos Machado - CV & Portfólio",
-  "metaDescription": "Olá. Me chamo Carlos. Sou desenvolverdor full-stack e atualmente estou estudando Ciência da Computação. Confira meu portfólio!",
-  "metaTags": "desenvolvedor, back-end, front-end, full-stack, portfólio, CV, resume, programador",
+  "metaDescription": "Oi! Me chamo Carlos, um desenvolverdor full-stack. Confira meu portfólio.",
+  "metaTags": "desenvolvedor, back-end, front-end, full-cycle, full-stack, portfólio, CV, resume, programador",
   "about": "Sobre",
   "experience": "Experiência",
   "education": "Educação",
   "skills": "Habilidades",
   "portfolio": "Portfólio",
   "certifications": "Certificações",
-  "welcomeText": "Olá. Sou um desenvolvedor full-stack e atualmente curso Ciência da Computação. Estou sempre em busca de novos conhecimentos e tenho muita curiosidade em saber como as coisas são construídas. Eu amo programar! Já desenvolvi diversos projetos pessoais como applicações web e mobile. Veja meu ",
+  "welcomeText": "Sou um desenvolvedor full-stack, sempre em busca de novos conhecimentos e curioso em saber como as coisas são construídas. Já desenvolvi diversos projetos pessoais que vão desde applicações web e mobile até um emulador de processador. Veja meu ",
   "_positions": [
     {
       "title": "Programador Júnior",
-      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
-      "period": "07/2021 — 08/2022"
+      "description": "Trabalhei no desenvolvimento de funcionalidades para o sistema de gestão financeira além de integrações com sistemas externos por meio de APIs. Além disso, também trabalhei na análise e correção de bugs.",
+      "period": "Jul/2021 — Ago/2022"
     },
     {
       "title": "Programador Pleno",
-      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
-      "period": "09/2022 — 10/2022"
+      "description": "Responsável por desenvolver e manter sistemas web acadêmicos e financeiros da universidade. Com foco no EaD, desenvolvi APIs e trabalhei em diversas integrações.",
+      "period": "Set/2022 — Out/2022"
     },
     {
       "title": "Analista de Sistemas Júnior",
-      "description": "Responsável por desenvolver e manter sistemas web da universidade.",
-      "period": "11/2022 — Atualmente"
+      "description": "Responsável por desenvolver e manter as funcionalidades do sistema EaD da universidade, além das integrações com os sistemas BlackBoard e AvaliA.",
+      "period": "Nov/2022 — Atualmente"
     }
   ],
   "univaliFullName": "UNIVALI – Universidade do Vale do Itajaí",
@@ -32,22 +32,24 @@
     {
       "title": "Bacharelado em Ciência da Computação",
       "description": "",
-      "period": "01/2018 — 12/2022"
+      "period": "Jan/2018 — Dez/2022"
     },
     {
       "title": "Especialização em Engenharia de Software",
       "description": "",
-      "period": "07/2023 — Atualmente"
+      "period": "Jul/2023 — Atualmente"
     }
   ],
   "languagesAndTools": "Linguagens & Ferramentas",
   "languages": "Linguagens",
   "tools": "Ferramentas",
+  "frameworks": "Frameworks",
+
   "competencies": "Competências",
   "_competencies": [
     "Desenvolvimento Full Cycle para Mobile & Web",
     "Testes Unitários",
-    "Kanban & Desenvolvimento Ágil"
+    "Desenvolvimento Ágil"
   ],
   "_projects": [
     {

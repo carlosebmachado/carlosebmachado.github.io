@@ -1,30 +1,30 @@
 {
   "language": "PT-BR",
   "websiteTitle": "Carlos Machado - CV & Portfolio",
-  "metaDescription": "Hi. My name is Carlos. I am a fullstack developer and I am currently studying Computer Science. Check out my portfolio!",
-  "metaTags": "developer, backend, frontend, fullstack, portfolio, CV, resume, programmer",
+  "metaDescription": "Hi. My name is Carlos, a fullstack developer. Check out my portfolio.",
+  "metaTags": "developer, backend, frontend, fullcycle, fullstack, portfolio, CV, resume, programmer",
   "about": "About",
   "experience": "Experience",
   "education": "Education",
   "skills": "Skills",
   "portfolio": "Portfolio",
   "certifications": "Certifications",
-  "welcomeText": "Hello. I am a full stack developer and I am currently studying Computer Science. I am always looking for new knowledge and I am very curious to know how things are built. I love to code! I have already developed several personal projects such as web and mobile applications. See my ",
+  "welcomeText": "I'm a full-stack developer, always looking for new knowledge and curious to know how things are built. I have already developed several personal projects ranging from web and mobile applications to a processor emulator. See my ",
   "_positions": [
     {
       "title": "Junior Programmer",
-      "description": "Responsible for developing and maintaining university web systems.",
-      "period": "2021-07 — 2022-08"
+      "description": "I worked on the development of functionalities for the financial management system, as well as integrations with external systems through APIs. In addition, I also worked on analyzing and fixing bugs.",
+      "period": "Jul 2021 — Aug 2022"
     },
     {
       "title": "Programmer",
-      "description": "Responsible for developing and maintaining university web systems.",
-      "period": "2022-09 — 2022-10"
+      "description": "Responsible for developing and maintaining the university's academic and financial web systems. Focusing on EaD, I developed APIs and worked on several integrations.",
+      "period": "Sep 2022 — Oct 2022"
     },
     {
       "title": "Junior Systems Analyst",
-      "description": "Responsible for developing and maintaining university web systems.",
-      "period": "2022-11 — Currently"
+      "description": "Responsible for developing and maintaining the features of the university's EaD system, in addition to integrations with BlackBoard and AvaliA systems.",
+      "period": "Nov 2022 — Present"
     }
   ],
   "univaliFullName": "UNIVALI – Univesity of Itajaí Valley",
@@ -32,12 +32,12 @@
     {
       "title": "Bachelor of Computer Science",
       "description": "",
-      "period": "2018-01 — 2022-12"
+      "period": "Jan 2018 — Dec 2022"
     },
     {
       "title": "Software Engineering Especialization",
       "description": "",
-      "period": "2023-07 — Currently"
+      "period": "Jul 2023 — Present"
     }
   ],
   "languagesAndTools": "Languages & Tools",
@@ -47,7 +47,7 @@
   "_competencies": [
     "Mobile & Web Full Cycle Development",
     "Unit Testing",
-    "Agile Development & Kanban"
+    "Agile Development"
   ],
   "_projects": [
     {
