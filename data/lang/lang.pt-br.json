@@ -54,20 +54,26 @@
   "_projects": [
     {
       "title": "ToDo",
-      "description": "O ToDo é um aplicativo de gerenciamento de tarefas. O back-end foi feito com Node.js e MongoDB, o app web com React.js e o app mobile com React Native.",
-      "link": ""
+      "description": "O ToDo é um aplicativo de gerenciamento de tarefas. O back-end foi desenvolvido em Node.js utilizando o banco de dados MongoDB, o app web em React.js e o app mobile em React Native."
     },
     {
       "title": "The Blog",
-      "description": "O The Blog é um blog feito em PHP usando o padrão MVC, banco de dados MySQL e o framework bootstrap. O conteúdo é gerenciado pelo painel Admin.",
-      "link": ""
+      "description": "O \"The Blog\" é um blog desenvolvido em PHP utilizando a arquitetura MVC, banco de dados MySQL e o framework bootstrap. O conteúdo é gerenciado por um CMS próprio desenvolvido para o blog."
+    },
+    {
+      "title": "Little Computer 3 (LC-3)",
+      "description": "O \"Little Computer 3 Virtual Machine\" é uma máquina virtual (VM) desenvolvida em C++ que executa programas do Little Computer 3 (LC-3). Para saber como escrever e executar programas LC-3 nesta VM, acesse a página do projeto no GitHub."
+    },
+    {
+      "title": "MoonLander",
+      "description": "O MoonLander é um jogo desenvolvido usando a engine Godot. Minha principal motivação para seu desenvolvimento foi estudar a mecânica de gravidade do Godot."
     }
   ],
   "ctaGithub": "Veja mais em meu ",
   "_certifications": [
     "Trabalho Voluntário – APAE Barra Velha – Fui responsável pela implantação de seu website institucional e capacitação da equipe de administração.",
     "Inglês – CEFR Level C1 (Cursando)",
-    "Curso GitHub Zero to Hero – MVP Microsoft Julio Arruda"
+    "Certificação GitHub Zero to Hero – MVP Microsoft Julio Arruda"
   ],
   "cookieMessage": "Este site utiliza cookies para o seu funcionamento.",
   "ok": "Ok"
