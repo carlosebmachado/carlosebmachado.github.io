@@ -119,7 +119,7 @@ function setTheme(theme) {
 // Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 //
 
-window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', _ => {
 
   // Activate Bootstrap scrollspy on the main nav element
   const sideNav = document.body.querySelector('#sideNav');
