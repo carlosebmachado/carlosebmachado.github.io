@@ -27,6 +27,14 @@
       "period": "Nov 2022 — Present"
     }
   ],
+  "_universities": [
+    {
+      "name": "UNIVALI – Univesity of Itajaí Valley"
+    },
+    {
+      "name": "Estácio de Sá Univesity"
+    }
+  ],
   "univaliFullName": "UNIVALI – Univesity of Itajaí Valley",
   "_degrees": [
     {
@@ -35,9 +43,9 @@
       "period": "Jan 2018 — Dec 2022"
     },
     {
-      "title": "Software Engineering Especialization",
+      "title": "Software Engineering Graduate",
       "description": "",
-      "period": "Jul 2023 — Present"
+      "period": "May 2023 — Present"
     }
   ],
   "languagesAndTools": "Languages & Tools",

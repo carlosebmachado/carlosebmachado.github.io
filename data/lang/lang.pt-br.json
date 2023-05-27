@@ -27,6 +27,14 @@
       "period": "Nov/2022 — Atualmente"
     }
   ],
+  "_universities": [
+    {
+      "name": "UNIVALI – Universidade do Vale do Itajaí"
+    },
+    {
+      "name": "Universidade Estácio de Sá"
+    }
+  ],
   "univaliFullName": "UNIVALI – Universidade do Vale do Itajaí",
   "_degrees": [
     {
@@ -37,7 +45,7 @@
     {
       "title": "Especialização em Engenharia de Software",
       "description": "",
-      "period": "Jul/2023 — Atualmente"
+      "period": "Maio/2023 — Atualmente"
     }
   ],
   "languagesAndTools": "Linguagens & Ferramentas",
