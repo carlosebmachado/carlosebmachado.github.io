@@ -1,15 +1,15 @@
 {
   "language": "PT-BR",
   "websiteTitle": "Carlos Machado - CV & Portfolio",
-  "metaDescription": "Hi. My name is Carlos, a fullstack developer. Check out my portfolio.",
-  "metaTags": "developer, backend, frontend, fullcycle, fullstack, portfolio, CV, resume, programmer",
+  "metaDescription": "Hi. My name is Carlos, a full-stack developer. Check out my portfolio.",
+  "metaTags": "developer, back-end, front-end, full-cycle, full-stack, portfolio, CV, resume, programmer",
   "about": "About",
   "experience": "Experience",
   "education": "Education",
   "skills": "Skills",
   "portfolio": "Portfolio",
   "certifications": "Certifications",
-  "welcomeText": "I'm a full-stack developer, always looking for new knowledge and curious to know how things are built. I have already developed several personal projects ranging from web and mobile applications to a processor emulator. See my ",
+  "welcomeText": "I am a programmer with a degree in Computer Science, with several personal projects developed, such as web, mobile, and desktop applications, as well as some games and even a processor emulator. See more on my ",
   "_positions": [
     {
       "title": "Junior Programmer",
