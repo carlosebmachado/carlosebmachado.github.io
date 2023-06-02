@@ -61,7 +61,7 @@
   ],
   "_projects": [
     {
-      "title": "ToDo",
+      "title": "ToDo (em desenvolvimento)",
       "description": "O ToDo é um aplicativo de gerenciamento de tarefas. O back-end foi desenvolvido em Node.js utilizando o banco de dados MongoDB, o app web em React.js e o app mobile em React Native."
     },
     {

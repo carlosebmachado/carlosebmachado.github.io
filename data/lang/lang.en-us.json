@@ -59,7 +59,7 @@
   ],
   "_projects": [
     {
-      "title": "ToDo",
+      "title": "ToDo (under development)",
       "description": "ToDo is a task management application. The backend was developed in Node.js using MongoDB database, the web app in React.js and the mobile app in React Native."
     },
     {
