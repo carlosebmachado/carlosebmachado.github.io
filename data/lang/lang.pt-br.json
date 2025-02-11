@@ -12,30 +12,39 @@
   "welcomeText": "Sou um programador formado em Ciência da Computação, com diversos projetos pessoais desenvolvidos, como aplicações web, mobile e desktop, além de alguns jogos e até um emulador de processador. Veja mais em meu ",
   "_positions": [
     {
+      "title": "Gerente",
+      "company": "Panificadora & Confeitaria Larissa",
+      "description": "Responsável por gerenciar a equipe, controlar o estoque, fazer pedidos, atender clientes, entre outras atividades.",
+      "period": "Nov/2015 — Jul/2021"
+    },
+    {
       "title": "Programador Júnior",
+      "company": "UNIVALI — Universidade do Vale do Itajaí",
       "description": "Trabalhei no desenvolvimento de funcionalidades para o sistema de gestão financeira além de integrações com sistemas externos por meio de APIs. Além disso, também trabalhei na análise e correção de bugs.",
       "period": "Jul/2021 — Ago/2022"
     },
     {
       "title": "Programador Pleno",
+      "company": "UNIVALI — Universidade do Vale do Itajaí",
       "description": "Responsável por desenvolver e manter sistemas web acadêmicos e financeiros da universidade. Com foco no EaD, desenvolvi APIs e trabalhei em diversas integrações.",
       "period": "Set/2022 — Out/2022"
     },
     {
-      "title": "Analista de Sistemas Júnior",
+      "title": "Desenvolvedor e Analista de Sistemas",
+      "company": "UNIVALI — Universidade do Vale do Itajaí",
       "description": "Responsável por projetar, desenvolver e manter as funcionalidades do sistema EaD da universidade, além das integrações com os sistemas BlackBoard e AvaliA.",
       "period": "Nov/2022 — Atualmente"
     }
   ],
   "_universities": [
     {
-      "name": "UNIVALI – Universidade do Vale do Itajaí"
+      "name": "UNIVALI — Universidade do Vale do Itajaí"
     },
     {
       "name": "Universidade Estácio de Sá"
     }
   ],
-  "univaliFullName": "UNIVALI – Universidade do Vale do Itajaí",
+  "univaliFullName": "UNIVALI — Universidade do Vale do Itajaí",
   "_degrees": [
     {
       "title": "Bacharelado em Ciência da Computação",
@@ -45,7 +54,7 @@
     {
       "title": "Especialização em Engenharia de Software",
       "description": "",
-      "period": "Maio/2023 — Atualmente"
+      "period": "Jul/2023 — Jun/2024"
     }
   ],
   "languagesAndTools": "Linguagens & Ferramentas",
@@ -54,11 +63,7 @@
   "frameworks": "Frameworks",
 
   "competencies": "Competências",
-  "_competencies": [
-    "Desenvolvimento Full Cycle para Mobile & Web",
-    "Testes Unitários",
-    "Desenvolvimento Ágil"
-  ],
+  "_competencies": ["Desenvolvimento Full Cycle para Mobile & Web", "Testes Unitários", "Desenvolvimento Ágil"],
   "_projects": [
     {
       "title": "ToDo",
@@ -78,11 +83,7 @@
     }
   ],
   "ctaGithub": "Veja mais em meu ",
-  "_certifications": [
-    "Trabalho Voluntário – APAE Barra Velha – Fui responsável pela implantação de seu website institucional e capacitação da equipe de administração.",
-    "Inglês – CEFR Level C1 (Cursando)",
-    "Certificação GitHub Zero to Hero – MVP Microsoft Julio Arruda"
-  ],
+  "_certifications": ["Trabalho Voluntário — APAE Barra Velha — Fui responsável pela implantação de seu website institucional e capacitação da equipe de administração.", "Inglês — CEFR Level C1 (Cursando)", "Certificação GitHub Zero to Hero — MVP Microsoft Julio Arruda"],
   "cookieMessage": "Este site utiliza cookies para o seu funcionamento.",
   "ok": "Ok"
 }

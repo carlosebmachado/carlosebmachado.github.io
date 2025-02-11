@@ -12,30 +12,39 @@
   "welcomeText": "I am a programmer with a degree in Computer Science, with several personal projects developed, such as web, mobile, and desktop applications, as well as some games and even a processor emulator. See more on my ",
   "_positions": [
     {
+      "title": "Manager",
+      "company": "Larissa's Bakery & Confectionery",
+      "description": "Responsible for managing the team, controlling inventory, placing orders, serving customers, among other activities.",
+      "period": "Nov 2015 — Jul 2021"
+    },
+    {
       "title": "Junior Programmer",
+      "company": "UNIVALI — University of Itajaí Valley",
       "description": "I worked on the development of functionalities for the financial management system, as well as integrations with external systems through APIs. In addition, I also worked on analyzing and fixing bugs.",
       "period": "Jul 2021 — Aug 2022"
     },
     {
       "title": "Programmer",
+      "company": "UNIVALI — University of Itajaí Valley",
       "description": "Responsible for developing and maintaining the university's academic and financial web systems. Focusing on EaD, I developed APIs and worked on several integrations.",
       "period": "Sep 2022 — Oct 2022"
     },
     {
-      "title": "Junior Systems Analyst",
+      "title": "Systems Analyst & Developer",
+      "company": "UNIVALI — University of Itajaí Valley",
       "description": "Responsible for projecting, developing and maintaining the features of the university's EaD system, in addition to integrations with BlackBoard and AvaliA systems.",
       "period": "Nov 2022 — Present"
     }
   ],
   "_universities": [
     {
-      "name": "UNIVALI – Univesity of Itajaí Valley"
+      "name": "UNIVALI — Univesity of Itajaí Valley"
     },
     {
       "name": "Estácio de Sá Univesity"
     }
   ],
-  "univaliFullName": "UNIVALI – Univesity of Itajaí Valley",
+  "univaliFullName": "UNIVALI — Univesity of Itajaí Valley",
   "_degrees": [
     {
       "title": "Bachelor of Computer Science",
@@ -45,7 +54,7 @@
     {
       "title": "Software Engineering Graduate",
       "description": "",
-      "period": "May 2023 — Present"
+      "period": "Jul 2023 — Jun 2024"
     }
   ],
   "languagesAndTools": "Languages & Tools",
